@@ -1,27 +1,21 @@
-# AngIntro
+# Angular Todo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+This is a simple Angular Todo application that allows you to add and manage todos.
 
-## Development server
+## Directives in Use
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The following Angular directives are utilized in this project:
 
-## Code scaffolding
+- `[(ngModel)]`: Two-way data binding is used to bind the input field to the `newTodo` property in the component, enabling real-time updates as the user types in the input field.
+- `(keyup.enter)`: This event binding listens for the Enter key press event in the input field and triggers the `addNew()` function to add a new todo when the user presses Enter.
+- `(click)`: The click event binding is used on the "Add New Todo" button and the "Done" button to perform the corresponding actions.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+1. Type a todo in the input field.
+2. Press Enter or click the "Add New Todo" button to add the todo to the list.
+3. Each added todo will appear as a list item along with a "Done" button.
+4. Click the "Done" button to mark a todo as completed and remove it from the list.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
